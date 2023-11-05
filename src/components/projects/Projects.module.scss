@@ -1,0 +1,29 @@
+.swiper {
+  height: 100%;
+  border-radius: 15px;
+
+  .parallax_bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 130%;
+    height: 100%;
+    // // background-image: url(../../assets/grey-sand.jpg);
+    // -webkit-background-size: contain;
+    // background-size: 100%;
+    // background-position: center;
+  }
+
+  &_slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .slide_img {
+      width: 70vw;
+      height: 70vh;
+      margin-bottom: 1rem;
+      border-radius: 15px !important;
+    }
+  }
+}

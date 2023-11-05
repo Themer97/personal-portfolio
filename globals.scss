@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+  color: #fff;
+  background-color: #0e1016;
+  background-image: url(https://assets.website-files.com/64c8cca…/64c8e01…_bg%20new.png);
+  background-size: cover;
+  font-family: Clashgrotesk, sans-serif;
+  font-size: 1vw;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+body {
+  overflow-x: hidden;
+  color: #fff;
+  background-color: #0e1016;
+  background-image: url(https://assets.website-files.com/64c8ccaab648aab5f6a84fc5/64c8e0178894991c51bfba0a_bg%20new.png);
+  background-position: 100%;
+  background-size: cover;
+  font-family: 'ClashGrotesk-Variable', sans-serif;
+  font-size: 1vw;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dfff00;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #000000;
+  border-radius: 0px;
+}
+
+.main {
+  padding: 2.5em;
+  padding-bottom: 0.5rem;
+
+  .section {
+    padding-top: 90px;
+    height: calc(100vh - 90px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+  }
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  background-color: white;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Clashgrotesk, sans-serif;
+  font-size: 5em;
+  font-weight: 400;
+  line-height: 100%;
+  display: inline-block;
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+
+.ant-row {
+  flex-direction: column;
+}
+
+.ant-form-item-label {
+  text-align: start !important;
+  margin-top: 10px;
+}
+
+.ant-form-item-label > label {
+  color: white !important;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-family: Clashgrotesk, sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+
+  &::before {
+    display: none !important;
+  }
+}
+
+.ant-form-item-explain-error {
+  margin: 0.5rem 2rem;
+}
