@@ -1,5 +1,5 @@
 .contact {
-  height: 60vh;
+  height: 70vh;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -34,10 +34,6 @@
         font-size: 1.25em;
         line-height: 100%;
         transition: all 0.2s;
-
-        &:nth-child(1) {
-          background-color: red;
-        }
       }
 
       &_footer {

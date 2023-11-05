@@ -26,7 +26,7 @@ body {
   background-image: url(https://assets.website-files.com/64c8ccaab648aab5f6a84fc5/64c8e0178894991c51bfba0a_bg%20new.png);
   background-position: 100%;
   background-size: cover;
-  font-family: 'ClashGrotesk-Variable', sans-serif;
+  font-family: "ClashGrotesk-Variable", sans-serif;
   font-size: 1vw;
   font-weight: 400;
   line-height: 150%;
@@ -69,6 +69,10 @@ a {
     height: calc(100vh - 90px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     display: flex;
+
+    @media screen and (max-width: 1440px) {
+      padding-top: 20px;
+    }
   }
 }
 

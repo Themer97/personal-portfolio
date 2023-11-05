@@ -8,7 +8,7 @@
     &_title {
       margin-top: 1rem;
       margin-bottom: 1rem;
-      font-family: 'Roboto', sans-serif;
+      font-family: "Roboto", sans-serif;
       font-size: 6em;
       font-weight: 400;
       line-height: 100%;
@@ -31,6 +31,10 @@
       margin-bottom: 0;
       font-size: 1.5em;
 
+      @media screen and (max-width: 1440px) {
+        margin-top: 2rem;
+      }
+
       svg {
         &:first-child {
           margin-right: 5px;
@@ -40,6 +44,12 @@
           margin-left: 5px;
         }
       }
+    }
+  }
+
+  &_design {
+    @media screen and (max-width: 1440px) {
+      height: 70%;
     }
   }
 }

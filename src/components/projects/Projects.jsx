@@ -1,26 +1,25 @@
-import Image from 'next/image';
+import Image from "next/image";
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 
-import { Parallax, Pagination, Navigation } from 'swiper/modules';
+import { Parallax, Pagination, Navigation } from "swiper/modules";
 
-import styles from './Projects.module.scss';
+import styles from "./Projects.module.scss";
 
-import unidrive from '../../assets/unidrive.png';
-import background from '../../assets/grey-sand.jpg';
+import unidrive from "../../assets/unidrive.png";
 
 const Projects = () => {
   return (
-    <div className='section' id='projects'>
+    <div className="section" id="projects">
       <Swiper
         className={styles.swiper}
         style={{
-          '--swiper-navigation-color': '#fff',
-          '--swiper-pagination-color': '#fff',
+          "--swiper-navigation-color": "#fff",
+          "--swiper-pagination-color": "#fff",
         }}
         speed={600}
         parallax={true}
@@ -31,18 +30,18 @@ const Projects = () => {
         modules={[Parallax, Pagination, Navigation]}
       >
         <div
-          slot='container-start'
+          slot="container-start"
           className={styles.parallax_bg}
-          data-swiper-parallax='-23%'
+          data-swiper-parallax="-23%"
         ></div>
         <SwiperSlide className={styles.swiper_slide}>
-          <Image className={styles.slide_img} src={unidrive} alt='unidirive' />
+          <Image className={styles.slide_img} src={unidrive} alt="unidirive" />
         </SwiperSlide>
         <SwiperSlide className={styles.swiper_slide}>
-          <Image className={styles.slide_img} src={unidrive} alt='unidirive' />
+          <Image className={styles.slide_img} src={unidrive} alt="unidirive" />
         </SwiperSlide>
         <SwiperSlide className={styles.swiper_slide}>
-          <Image className={styles.slide_img} src={unidrive} alt='unidirive' />
+          <Image className={styles.slide_img} src={unidrive} alt="unidirive" />
         </SwiperSlide>
       </Swiper>
     </div>

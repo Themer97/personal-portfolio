@@ -1,13 +1,13 @@
-import Image from 'next/image';
-import { BiSolidQuoteAltLeft, BiSolidQuoteAltRight } from 'react-icons/bi';
+import Image from "next/image";
+import { BiSolidQuoteAltLeft, BiSolidQuoteAltRight } from "react-icons/bi";
 
-import styles from './About.module.scss';
+import styles from "./About.module.scss";
 
-import design from '../../assets/design.png';
+import design from "../../assets/design.png";
 
 const About = () => {
   return (
-    <div className={`section ${styles.about_container}`} id='about'>
+    <div className={`section ${styles.about_container}`} id="about">
       <div className={styles.about}>
         <h1 className={styles.about_title}>Welcome to my portfolio.</h1>
         <span className={styles.description}>
@@ -22,7 +22,11 @@ const About = () => {
           <BiSolidQuoteAltRight />
         </p>
       </div>
-      <Image src={design} alt='design' />
+      <Image
+        src={design}
+        alt="design"
+        className={styles.about_container_design}
+      />
     </div>
   );
 };
